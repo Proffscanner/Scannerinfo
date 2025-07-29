@@ -24,6 +24,17 @@
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0,0,0,0.05);
         }
+        .image-row {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .image-row img {
+            max-width: 48%;
+            height: auto;
+            border-radius: 6px;
+        }
         img {
             max-width: 100%;
             height: auto;
@@ -61,7 +72,10 @@
 
     <div class="section">
         <h2 class="emoji">📷 1. Skanning av bilder, negativer og lysbilder</h2>
-        <img src="Printer_1.png" alt="Epson FastFoto FF-680W">
+        <div class="image-row">
+            <img src="Printer_1.png" alt="Epson FastFoto FF-680W">
+            <img src="Printer_2.png" alt="Epson Perfection V850 Pro">
+        </div>
         <ul>
             <li>Høyoppløselig skanning (300–600 dpi)</li>
             <li>Papirbilder, fotonegativ og 35mm lysbilder</li>
@@ -76,7 +90,6 @@
 
     <div class="section">
         <h2 class="emoji">🖨️ Profesjonell dokumentskanning</h2>
-        <img src="Printer_2.png" alt="Epson Perfection V850 Pro">
         <ul>
             <li>Profesjonelle skannere (f.eks. ScanSnap iX1600)</li>
             <li>Egnet for privatarkiv, regnskap, kontrakter mm.</li>
@@ -94,6 +107,7 @@
             <li>Fjerning av støv, riper og fargeflekker</li>
             <li>Retting av skjeve eller kuttede bilder</li>
             <li>Justering av kontrast og lys</li>
+            <li>AI-verktøy brukes også her for automatisk feilreduksjon, og alt kjøres lokalt – ingen bilder sendes ut av huset.</li>
         </ul>
     </div>
 
@@ -104,6 +118,7 @@
             <li>Automatisk fargelegging av sort/hvitt-bilder</li>
             <li>Gjenoppretting av falmede farger</li>
             <li>Fjerning av riper/skader med AI</li>
+            <li><strong>Personvern:</strong> All AI-behandling gjøres lokalt på min maskin – ingen bilder lastes opp til eksterne servere.</li>
         </ul>
     </div>
 
